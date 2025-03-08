@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { MessageCircle, X } from "lucide-react"; // Using Lucide Icons
+import { Bot, X } from "lucide-react"; // Using Lucide Icons
 
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,9 +68,9 @@ export default function Chatbot() {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-5 right-5 z-50 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition"
+          className="fixed bottom-20 right-5 z-50 text-white p-3 rounded-full shadow-lg cursor-pointer"
         >
-          <MessageCircle size={24} />
+          <img src="/chatbot.png" alt="Chatbot" className="w-13 h-13" />
         </button>
       )}
 

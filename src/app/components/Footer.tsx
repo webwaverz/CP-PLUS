@@ -31,7 +31,7 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div className="w-full lg:pl-10 md:w-1/5 flex flex-col items-center md:items-start">
+        <div className="w-full md:pl-16 md:w-1/5 flex flex-col items-center md:items-start">
           <h6 className="text-lg font-semibold text-yellow-500 mb-4">Quick Links</h6>
           <ul className="space-y-3 text-center md:text-left">
             {[ "Products","Services", "Pricing", "About", "Contact"].map((item, index) => (
@@ -45,16 +45,19 @@ export default function Footer() {
         </div>
 
         {/* Contact Info */}
-        <div className="w-full md:w-1/4 flex flex-col items-center md:items-start">
-          <h6 className="text-lg font-semibold  text-yellow-500 mb-4">Contact</h6>
+        <div className="w-full md:pl-8 lg:pl-0 md:w-1/4 flex flex-col items-center md:items-start">
+          <h6 className="text-lg font-semibold  text-yellow-500 mb-4 ">Contact Us</h6>
           <ul className="space-y-3 text-gray-300">
-            <li className="flex items-center">
-              <MapPin className="mr-3 text-blue-400" size={40} /> 
-              Shop No 127, August High Street, Ulkanagari, Aurangabad 431005.
-            </li>
+          <li className="flex items-center">
+  <div className="flex-shrink-0">
+    <MapPin className="mr-3 text-blue-400" size={20} />
+  </div>
+  Shop No 127, August High Street, Ulkanagari, Aurangabad 431005.
+</li>
+
             <li className="flex items-center">
               <Mail className="mr-3 text-red-400" size={20} />
-              <Link href="mailto:" className="hover:text-blue-400 transition">info@safeedge.co.in </Link>
+              <Link href="mailto:info@safeedge.co.in" className="hover:text-blue-400 transition">info@safeedge.co.in </Link>
             </li>
             <li className="flex items-center">
               <Phone className="mr-3 text-green-400" size={20} />
@@ -68,11 +71,11 @@ export default function Footer() {
         </div>
 
         {/* Social Media */}
-        <div className="w-full md:w-1/4 lg:pl-10 flex flex-col  items-center md:items-start">
+        <div className="w-full md:w-1/4 md:pl-12 flex flex-col  items-center md:items-start">
           <h6 className="text-lg font-semibold  text-yellow-500 mb-4">Follow Us</h6>
           <div className="grid grid-cols-3 gap-5">
             {[
-              { link: "https://wa.me/+91", icon: <MessageCircle size={30} className="text-green-400" /> },
+              { link: "https://wa.me/+918668708736", icon: <MessageCircle size={30} className="text-green-400" /> },
               { link: "", icon: <Linkedin size={30} className="text-blue-400" /> },
               { link: "#", icon: <Facebook size={30} className="text-gray-400" /> },
               { link: "#", icon: <Twitter size={30} className="text-blue-500" /> },
@@ -89,9 +92,9 @@ export default function Footer() {
       </div>
 
       {/* Copyright Section */}
-      <div className="bg-gray-800 flex justify-around text-center py-4 text-gray-200 text-sm">
-        <p>© 2025 SAFE EDGE - All rights reserved.</p>
-        <p>Designed & Developed by <span className="text-yellow-600 font-semibold"> Web Waverz</span></p>
+      <div className="bg-gray-800 flex justify-between text-center py-4 text-gray-200 text-md gap-10">
+        <p className="pl-20">© 2025 SAFE EDGE - All rights reserved.</p>
+        <p className="pr-20">Designed & Developed by <span className="text-yellow-600 font-semibold"><a href="https://www.webwaverz.tech/"> Web Waverz </a></span></p>
       </div>
     </footer>
   );

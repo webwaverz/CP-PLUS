@@ -18,11 +18,11 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
-            <Link href="/products" className="text-gray-700 hover:text-blue-500">Products</Link>
-            <Link href="/services" className="text-gray-700 hover:text-blue-500">Services</Link>
-            <Link href="/pricing" className="text-gray-700 hover:text-blue-500">Pricing</Link>
-            <Link href="/about" className="text-gray-700 hover:text-blue-500">About</Link>
-            <Link href="/contact" className="text-gray-700 hover:text-blue-500">Contact</Link>
+            <Link href="/products" className="text-gray-700 hover:text-yellow-500">Products</Link>
+            <Link href="/services" className="text-gray-700 hover:text-yellow-500">Services</Link>
+            <Link href="/pricing" className="text-gray-700 hover:text-yellow-500">Pricing</Link>
+            <Link href="/about" className="text-gray-700 hover:text-yellow-500">About</Link>
+            <Link href="/contact" className="text-gray-700 hover:text-yellow-500">Contact</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -36,10 +36,10 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white shadow-md">
           <div className="flex flex-col space-y-2 p-4">
-            <Link href="/services" className="text-gray-700 hover:text-blue-500">Services</Link>
-            <Link href="/pricing" className="text-gray-700 hover:text-blue-500">Pricing</Link>
-            <Link href="/about" className="text-gray-700 hover:text-blue-500">About</Link>
-            <Link href="/contact" className="text-gray-700 hover:text-blue-500">Contact</Link>
+            <Link href="/services" className="text-gray-700 hover:text-yellow-500">Services</Link>
+            <Link href="/pricing" className="text-gray-700 hover:text-yellow-500">Pricing</Link>
+            <Link href="/about" className="text-gray-700 hover:text-yellow-500">About</Link>
+            <Link href="/contact" className="text-gray-700 hover:text-yellow-500">Contact</Link>
           </div>
         </div>
       )}
