@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { Bot, X } from "lucide-react"; // Using Lucide Icons
+import { X } from "lucide-react"; // Using Lucide Icons
 
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
