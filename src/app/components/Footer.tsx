@@ -11,11 +11,12 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white w-full">
       {/* Google Map */}
       <div className="relative w-full pb-[28.125%]">
-        <iframe
-          src="https://maps.google.com/maps?q=SSAR%20%26%20Co%20Pimpri-Chinchwad%2C%20Maharashtra&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          className="absolute top-0 left-0 w-full h-full border-0"
-          loading="lazy"
-        ></iframe>
+      <iframe
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.413466151903!2d75.341481575937!3d19.864755581509115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba2837db5ba49%3A0x1664a14b584b0c95!2sSAFE%20EDGE%20SECURITY%20SOLUTION%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1741434636011!5m2!1sen!2sin"
+         className="absolute top-0 left-0 w-full h-full border-0"
+         loading="lazy"
+       ></iframe>
+
       </div>
 
       {/* Footer Content */}
@@ -30,10 +31,10 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div className="w-full pl-10 md:w-1/5 flex flex-col items-center md:items-start">
-          <h6 className="text-lg font-semibold text-white mb-4">Quick Links</h6>
+        <div className="w-full lg:pl-10 md:w-1/5 flex flex-col items-center md:items-start">
+          <h6 className="text-lg font-semibold text-yellow-500 mb-4">Quick Links</h6>
           <ul className="space-y-3 text-center md:text-left">
-            {[ "Services", "Pricing", "About", "Contact"].map((item, index) => (
+            {[ "Products","Services", "Pricing", "About", "Contact"].map((item, index) => (
               <li key={index}>
                 <Link href={`/${item.toLowerCase().replace(/\s+/g, "")}`} className="hover:text-blue-400 transition">
                   {item}
@@ -45,7 +46,7 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div className="w-full md:w-1/4 flex flex-col items-center md:items-start">
-          <h6 className="text-lg font-semibold text-white mb-4">Contact</h6>
+          <h6 className="text-lg font-semibold  text-yellow-500 mb-4">Contact</h6>
           <ul className="space-y-3 text-gray-300">
             <li className="flex items-center">
               <MapPin className="mr-3 text-blue-400" size={40} /> 
@@ -67,8 +68,8 @@ export default function Footer() {
         </div>
 
         {/* Social Media */}
-        <div className="w-full md:w-1/4 pl-10 flex flex-col items-center md:items-start">
-          <h6 className="text-lg font-semibold text-white mb-4">Follow Us</h6>
+        <div className="w-full md:w-1/4 lg:pl-10 flex flex-col  items-center md:items-start">
+          <h6 className="text-lg font-semibold  text-yellow-500 mb-4">Follow Us</h6>
           <div className="grid grid-cols-3 gap-5">
             {[
               { link: "https://wa.me/+91", icon: <MessageCircle size={30} className="text-green-400" /> },
@@ -88,9 +89,9 @@ export default function Footer() {
       </div>
 
       {/* Copyright Section */}
-      <div className="bg-gray-800 flex justify-around text-center py-4 text-gray-400 text-sm">
+      <div className="bg-gray-800 flex justify-around text-center py-4 text-gray-200 text-sm">
         <p>© 2025 SAFE EDGE - All rights reserved.</p>
-        <p>Designed & Developed by <span className="text-white font-semibold"> Web Waverz</span></p>
+        <p>Designed & Developed by <span className="text-yellow-600 font-semibold"> Web Waverz</span></p>
       </div>
     </footer>
   );
