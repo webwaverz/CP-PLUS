@@ -40,6 +40,6 @@ export async function POST(req: Request) {
       return NextResponse.json({ response: "Sorry, I don't understand.", options: [] });
     }
   } catch (error) {
-    return NextResponse.json({ error: "Invalid request format." }, { status: 400 });
+    return NextResponse.json({ error: error }, { status: 400 });
   }
 }

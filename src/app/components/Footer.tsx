@@ -4,6 +4,7 @@ import Link from "next/link";
 import { 
   Facebook, Instagram, Linkedin, Twitter, Youtube, Mail, Phone, MapPin, MessageCircle 
 } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -22,9 +23,9 @@ export default function Footer() {
 
         {/* Left Section: Logo & Description */}
         <div className="w-full md:w-1/4 flex flex-col items-center md:items-start">
-          <img src="/logo.png" alt="Logo" className="h-16 mb-4" />
+          <Image src="/images/logowhite.png" alt="Logo" width={300} height={300} />
           <p className="text-gray-300 text-center md:text-left leading-relaxed">
-            Small Description
+            Our Commitment is keeping you safe! <br /> World-class and trusted, uninterrupted safety service provider.
           </p>
         </div>
 
@@ -47,16 +48,20 @@ export default function Footer() {
           <h6 className="text-lg font-semibold text-white mb-4">Contact</h6>
           <ul className="space-y-3 text-gray-300">
             <li className="flex items-center">
-              <MapPin className="mr-3 text-blue-400" size={20} /> 
-              addresssss
+              <MapPin className="mr-3 text-blue-400" size={40} /> 
+              Shop No 127, August High Street, Ulkanagari, Aurangabad 431005.
             </li>
             <li className="flex items-center">
               <Mail className="mr-3 text-red-400" size={20} />
-              <Link href="mailto:" className="hover:text-blue-400 transition">email</Link>
+              <Link href="mailto:" className="hover:text-blue-400 transition">info@safeedge.co.in </Link>
             </li>
             <li className="flex items-center">
               <Phone className="mr-3 text-green-400" size={20} />
-              <Link href="tel:+91000000000" className="hover:text-blue-400 transition">+91 1234567890</Link>
+              <Link href="tel:+918668708736" className="hover:text-blue-400 transition">+91 8668708736</Link>
+            </li>
+            <li className="flex items-center">
+              <Phone className="mr-3 text-green-400" size={20} />
+              <Link href="tel:+919881301308" className="hover:text-blue-400 transition">+91 9881301308</Link>
             </li>
           </ul>
         </div>
@@ -84,7 +89,7 @@ export default function Footer() {
 
       {/* Copyright Section */}
       <div className="bg-gray-800 flex justify-around text-center py-4 text-gray-400 text-sm">
-        <p>© 2025 CP PLUS - All rights reserved.</p>
+        <p>© 2025 SAFE EDGE - All rights reserved.</p>
         <p>Designed & Developed by <span className="text-white font-semibold"> Web Waverz</span></p>
       </div>
     </footer>
